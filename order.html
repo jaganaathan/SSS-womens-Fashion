@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order details </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Lovers+Quarrel&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <link rel="stylesheet" href="order.css">
+
+</head>
+
+<body>
+         
+    <nav class="nvb">
+        <div class="nvb_container">
+            <a href="#home " id="logo"><b>SSS  Women's fashion</b> </a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span> <!-- hamburger bar design -->
+                <span class="bar"></span>
+            </div>
+
+         <ul class="nvb_menu"> 
+
+             <li class="nvb_item">
+                 <a href="index.html" class="nvb_links" id="home-page"> Home </a>
+             </li>
+             
+             <li class="nvb_btn">
+                <a href="https://instagram.com/ssswomensfashion?igshid=g05y87ys09fd" class="btn1" id="contact-page"> Contact us</a>
+            </li>
+
+         </ul>   
+
+        </div>
+    </nav>
+
+     <div class="ct_container">
+           <div class="form-group">
+             <h1> ... Order Form ... </h1>
+             <p class="add-title"> ... Thank you for ordering ... </p>
+             <form action="order.php"method="post">
+                    <div class="input-label">
+                        <label class="funi" for="fullname"> Full Name :</label>
+                        <input type="text" class="input" name="name" placeholder="  full name...." required>
+                    </div>
+
+                    <div class="input-label">
+                        <label class="emi" for="email"> Email :</label>
+                        <input type="email" class="input" name="email" placeholder="   Email ID .." required>
+                    </div>
+
+                    <div class="input-label">
+                        <label  class="mobi" for="contact"> Contact Number : </label>
+                        <input type="number" class="input" name="contact" placeholder="  contact no .." required>
+                    </div>
+                     
+                    <div class="input-label">
+                         
+                        <label class="option">Choose your dress type :</label>
+                        <select id="option" name="option">
+                          <option value="Blouse">Blouse</option>
+                          <option value="chudithar">Chudithar</option>
+                          <option value="Lehenga">Lehenga</option>
+                          <option value="Kurta">Kurta</option>
+                        </select>
+                         
+                    </div>
+
+                    <div class="input-label">
+                        <label  class="size" for="size"> Dress-Size : </label>
+                        <input type="text" class="input" name="size" placeholder="   dress size xx,xx,xx" required>
+                    </div>
+
+  
+                      
+                     <div class="input-label">
+                         <label class="mesi" for="message">  Message to us : </label>
+                         <textarea name="message" class="input" placeholder="  note for us .."></textarea>
+                     </div>
+                          
+                     <div class="btn" id="submit">
+                         <button class="main_btn" type="submit"><a href=""> Submit </a></button>
+                         <button id='re'class="main_btn" type="reset"><a href="#"> Reset </a></button>
+                     </div>
+
+                     
+             </form>
+           </div>
+       </div>
+
+
+    
+       <script src="order.js"></script> <!--connecting js file with html -->
+</body>
+
+</html>
